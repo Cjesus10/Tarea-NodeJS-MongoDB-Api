@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Javier Palian",
+    "age": 35,
+    "email": "jpalian@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a62bf7ce2fb68c4ea47f10 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63a62980fe7f8a132fcce2c8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Ricado Mendoza",
+    "age": 35,
+    "email": "ricardoMendoza@email.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/63a64c0a7ac4df98da00d593 HTTP/1.1
